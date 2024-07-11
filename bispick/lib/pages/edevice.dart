@@ -30,7 +30,16 @@ class _EdeviceState extends State<Edevice> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Colors.black,
         title: Text(
           'Lost E-devices',
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
@@ -58,7 +67,7 @@ class _EdeviceState extends State<Edevice> {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Center(
                 child: CircularProgressIndicator(
-                  color: Colors.orange,
+                  color: Colors.black,
                 ),
               );
             } else if (snapshot.hasError) {
@@ -128,7 +137,7 @@ class _EdeviceState extends State<Edevice> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8.0),
                                 border: Border.all(
-                                  color: Colors.orange,
+                                  color: Colors.black,
                                   width: 3,
                                 ),
                               ),

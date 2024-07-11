@@ -3,6 +3,7 @@ import 'package:bispick/pages/home.dart';
 import 'package:bispick/pages/itemsdetail.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Stationary extends StatefulWidget {
   const Stationary({Key? key}) : super(key: key);
@@ -30,7 +31,16 @@ class _StationaryState extends State<Stationary> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Colors.black,
         title: Text(
           'Lost Stationary',
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
@@ -58,7 +68,7 @@ class _StationaryState extends State<Stationary> {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return Center(
                 child: CircularProgressIndicator(
-                  color: Colors.orange,
+                  color: Colors.black,
                 ),
               );
             } else if (snapshot.hasError) {
@@ -128,7 +138,7 @@ class _StationaryState extends State<Stationary> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8.0),
                                 border: Border.all(
-                                  color: Colors.orange,
+                                  color: Colors.black,
                                   width: 3,
                                 ),
                               ),

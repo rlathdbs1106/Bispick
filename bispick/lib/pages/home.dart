@@ -105,7 +105,7 @@ class _MainPageState extends State<MainPage> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).pushNamed('EdeviceView');
+                          Navigator.of(context).pushNamed('edeviceView');
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -124,7 +124,7 @@ class _MainPageState extends State<MainPage> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).pushNamed('ClothingView');
+                          Navigator.of(context).pushNamed('clothingView');
                         },
                         child: Container(
                           alignment: Alignment.center,
@@ -139,7 +139,7 @@ class _MainPageState extends State<MainPage> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).pushNamed('StationaryView');
+                          Navigator.of(context).pushNamed('stationaryView');
                         },
                         child: Container(
                             alignment: Alignment.center,
@@ -153,7 +153,7 @@ class _MainPageState extends State<MainPage> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).pushNamed('OthersView');
+                          Navigator.of(context).pushNamed('othersView');
                         },
                         child: Container(
                           alignment: Alignment.center,

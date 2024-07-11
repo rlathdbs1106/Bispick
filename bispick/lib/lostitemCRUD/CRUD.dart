@@ -85,36 +85,36 @@ class CRUD {
       print(e);
     });
   }
-}
 
-Future<dynamic> getEdevices() async {
-  return await FirebaseFirestore.instance
-      .collection('Lostthings')
-      .where('category', isEqualTo: 'E-Device')
-      .orderBy('time', descending: true)
-      .snapshots();
-}
+  Future<dynamic> getEdevices() async {
+    return await FirebaseFirestore.instance
+        .collection('Lostthings')
+        .where('category', isEqualTo: 'E-Device')
+        .orderBy('time', descending: true)
+        .snapshots();
+  }
 
-Future<dynamic> getClothings() async {
-  return await FirebaseFirestore.instance
-      .collection('Lostthings')
-      .where('category', isEqualTo: 'Clothing')
-      .orderBy('time', descending: true)
-      .snapshots();
-}
+  Future<dynamic> getClothings() async {
+    return await FirebaseFirestore.instance
+        .collection('Lostthings')
+        .where('category', isEqualTo: 'Clothing')
+        .orderBy('time', descending: true)
+        .snapshots();
+  }
 
-Future<dynamic> getStationerys() async {
-  return await FirebaseFirestore.instance
-      .collection('Lostthings')
-      .where('category', isEqualTo: 'Stationery')
-      .orderBy('time', descending: true)
-      .snapshots();
-}
+  Future<dynamic> getStationerys() async {
+    return await FirebaseFirestore.instance
+        .collection('Lostthings')
+        .where('category', isEqualTo: 'Stationery')
+        .orderBy('time', descending: true)
+        .snapshots();
+  }
 
-Future<dynamic> getOthers() async {
-  return await FirebaseFirestore.instance
-      .collection('Lostthings')
-      .where('category', isEqualTo: 'Others')
-      .orderBy('time', descending: true)
-      .snapshots();
+  Future<dynamic> getOthers() async {
+    return await FirebaseFirestore.instance
+        .collection('Lostthings')
+        .where('category', isEqualTo: 'Others')
+        .orderBy('time', descending: true)
+        .snapshots();
+  }
 }
