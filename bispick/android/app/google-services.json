@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461612834165",
+    "project_id": "bispick-0213",
+    "storage_bucket": "bispick-0213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461612834165:android:d5950c126de5b0b96a073c",
+        "android_client_info": {
+          "package_name": "com.example.bispick"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVhOUxD89OxI6htKctYLD3vvE_IpbS4DM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
